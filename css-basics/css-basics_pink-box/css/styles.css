@@ -8,10 +8,13 @@ body {
   font-family: system-ui;
 }
 
-/* put a selector here to select div elements (see index.html) */
-SELECTOR HERE {
+div {
   font-family: cursive;
   padding: 8px;
+  height: 150px;
+  width: 150px;
+  background-color: hotpink;
+  color: white;
 
   /* set the height and the width of the box to 150px */
 
