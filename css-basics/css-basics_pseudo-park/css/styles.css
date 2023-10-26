@@ -13,12 +13,6 @@
 .animal {
   padding: 16px;
   font-size: 32px;
-
-  /*
-    The animals are very small.
-    The size of the emojis is controlled via the font size.
-    Set the font size to 32px.
-  */
 }
 
 /*
@@ -29,12 +23,22 @@
   💡 Select the animals by their class name and use the text align property.
 */
 
-/* 
-  The animals want some color! 🎨
-  When the mouse hovers over an animal, change the background color.
-   - The crocodile wants to be lightblue.
-   - The giraffe likes lightgreen.
-   - The dino is a huge fan of lightsalmon.
+.giraffe {
+  text-align: center;
+}
 
-  💡 You'll need to use a pseudo class selector for each animal.
-*/
+.dino {
+  text-align: right;
+}
+
+.giraffe:hover {
+  background-color: lightgreen;
+}
+
+.crocodile:hover {
+  background-color: lightblue;
+}
+
+.dino:hover {
+  background-color: lightsalmon;
+}
