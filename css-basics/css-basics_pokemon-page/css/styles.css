@@ -52,7 +52,7 @@
 - Bonus:  The left border of the second section which contains a list of favourite Pokémon should have the color "gold". Hint: You may need a second CSS rule.
 */
 
-section {
+section p {
   background-color: white;
   padding: 20px;
   margin: 10px;
