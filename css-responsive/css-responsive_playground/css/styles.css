@@ -92,6 +92,13 @@ h1 {
   height: 250px;
 }
 
+@media (orientation: landscape) {
+  .box.box--three {
+    width: 200px;
+    height: 20px;
+  }
+}
+
 .box--four {
   background-color: lightgray;
 
@@ -99,10 +106,16 @@ h1 {
   height: 100px;
 }
 
+@media (prefers-color-scheme: dark) {
+  .box.box--four {
+    background-color: lime;
+  }
+}
+
 .box--five {
   width: 100%;
 }
 
-.box--five img {
+@media .box--five img {
   width: 100%;
 }
