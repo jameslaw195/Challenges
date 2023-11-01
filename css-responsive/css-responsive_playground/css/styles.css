@@ -115,7 +115,3 @@ h1 {
 .box--five {
   width: 100%;
 }
-
-@media .box--five img {
-  width: 100%;
-}
