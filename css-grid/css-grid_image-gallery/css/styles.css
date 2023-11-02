@@ -25,7 +25,6 @@ Hint: you need only two lines of code in your grid container
   --grey-light: #f5f6f6;
 }
 
-
 *,
 *::before,
 *::after {
@@ -42,7 +41,8 @@ body {
   min-width: 40rem;
   min-height: 100vh;
 
-  /* Add styles to the grid container */
+  display: grid;
+  grid-area: 2/2;
 }
 
 .teaser-grid__teaser {
