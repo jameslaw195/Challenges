@@ -42,7 +42,7 @@ body {
   min-height: 100vh;
 
   display: grid;
-  grid-area: 2/2;
+  grid-template-columns: 1fr 1fr;
 }
 
 .teaser-grid__teaser {
