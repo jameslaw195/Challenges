@@ -3,12 +3,17 @@ data = 20;
 
 data = "hello";
 
+data = null;
+
+typeof data;
+
+data = [0];
+
+typeof data;
+
 switch (typeof data) {
   case "undefined":
     console.log("undefined!");
-    break;
-  case "null":
-    console.log("null!");
     break;
   case "number":
     console.log("number!");
@@ -23,14 +28,22 @@ switch (typeof data) {
     console.log("function!");
     break;
   case "object":
-    console.log("object!");
-    break;
-  case "array":
-    console.log("array!");
-    break;
+    if (Array.isArray(data)) {
+      console.log("This is an array");
+    } else if (data == null) {
+      console.log("this is Null!");
+    } else {
+      console.log("object!");
+      break;
+    }
+  // case "array":
+  //   console.log("array!");
+  //   break;
   case "string":
     console.log("string!");
     break;
   default:
     console.log("I have no idea!");
 }
+
+typeof data;
