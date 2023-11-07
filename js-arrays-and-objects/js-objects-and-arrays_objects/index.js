@@ -17,8 +17,8 @@ const personAlex = {
   age: 24,
 };
 
-const nameOfAlex = personWithNameAgeEmail.name;
-const ageOfAlex = personWithNameAgeEmail.age;
+const nameOfAlex = personAlex.name;
+const ageOfAlex = personAlex.age;
 
 console.log(personAlex);
 
