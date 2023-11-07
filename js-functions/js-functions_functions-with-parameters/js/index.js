@@ -13,8 +13,8 @@ function logText() {
   console.log("This text does not appear. Why?");
 }
 
-console.log("-------------");
-console.log("Exercise 2:");
+logSeperator(2);
+
 /*
 2: Look at the functions below. They are almost identical. Can you find a way to generalize them into a new function with an input parameter? Replace the function calls below with your new function.
 */
@@ -29,8 +29,8 @@ greet("Mary");
 
 // --^-- write your code here --^--
 
-console.log("-------------");
-console.log("Exercise 3:");
+logSeperator(3);
+
 /*
 3: We log a little separation text for each subtask. This is repetitive code, so lets write a function 'logSeparator' which takes the number of the exercise as a parameter and logs the respective separator. Then use this function to replace the existing separator logs in this javascript file.
 
