@@ -20,6 +20,7 @@ pizzaInput2.addEventListener("input", () => {
   let pizzaSize2 = pizzaInput2.value;
 
   calculatePizzaGain(pizzaSize1, pizzaSize2);
+  updatePizzaDisplay();
 });
 
 // Task 1
@@ -37,6 +38,8 @@ function calculatePizzaGain(diameter1, diameter2) {
 // Task 2
 // define the function updatePizzaDisplay here
 
-function updatePizzaDisplay(pizzaElement, newSize) {}
+function updatePizzaDisplay(pizzaElement, newSize) {
+  pizzaElement.style.width = (newSize / 24) * 100 + "px";
+}
 // Task 3
 // define the function updateOutputColor here
