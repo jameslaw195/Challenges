@@ -29,18 +29,28 @@ function getGreeting(hour) {
     return "Good Afternoon";
   } else if (hour >= 19 && hour <= 22) {
     return "Good Evening";
-    // } else if (hour >= 23 && hour <= 5) {
-    //   return "Good Night";
-  } else {
+  } else if (hour >= 23 && hour <= 5) {
     return "Good Night";
+  } else {
+    return undefined;
   }
 }
 
-console.log(getGreeting(50));
+console.log(getGreeting(22));
 
-function getDayColor() {
-  // Code here
+function getDayColor(dayOfWeek) {
+  if ((dayOfWeek = "Monday")) {
+    return "darkgray";
+  } else if ((dayOfWeek = "Tuesday" || "Wednesday" || "Thursday" || "Friday")) {
+    return "lightblue";
+  } else if ((dayOfWeek = "Saturday" || "Sunday")) {
+    return "hotpink";
+  } else {
+    return undefined;
+  }
 }
+
+console.log(dayOfWeek("Wendesday"));
 
 display.textContent = getGreeting();
 document.body.style.backgroundColor = getDayColor();
