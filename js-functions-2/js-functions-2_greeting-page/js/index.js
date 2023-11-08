@@ -23,7 +23,7 @@ Change the contents of this page depending on the current day and time.
 const display = document.querySelector('[data-js="display"]');
 
 function getGreeting() {
-  let hour = newDate().getHours();
+  let hour = new Date().getHours();
 
   if (hour >= 6 && hour <= 12) {
     return "Good Morning";
@@ -40,7 +40,7 @@ function getGreeting() {
 }
 
 function getDayColor() {
-  let dayOfWeek = new Date().getDay();
+  const dayOfWeek = new Date().getDay();
 
   if (dayOfWeek === 1) {
     return "darkgray";
