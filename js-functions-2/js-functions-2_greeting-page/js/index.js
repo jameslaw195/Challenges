@@ -22,7 +22,7 @@ Change the contents of this page depending on the current day and time.
 
 const display = document.querySelector('[data-js="display"]');
 
-function getGreeting(hour) {
+function getGreeting() {
   let hour = newDate().getHours();
 
   if (hour >= 6 && hour <= 12) {
@@ -39,18 +39,16 @@ function getGreeting(hour) {
   }
 }
 
-console.log(getGreeting(22));
+function getDayColor() {
+  let dayOfWeek = new Date().getDay();
 
-function getDayColor(dayOfWeek) {
-  let dayOfWeek = newDate().getDay()
-
-  if (dayOfWeek = 1) {
+  if (dayOfWeek === 1) {
     return "darkgray";
-  } 
-  if (dayOfWeek >1 && dayOfWeek <= 5) {
+  }
+  if (dayOfWeek > 1 && dayOfWeek <= 5) {
     return "lightblue";
-  } 
-  if (dayOfWeek = 0 || dayOfWeek = 6) {
+  }
+  if (dayOfWeek === 0 || dayOfWeek === 6) {
     return "hotpink";
   }
 }
