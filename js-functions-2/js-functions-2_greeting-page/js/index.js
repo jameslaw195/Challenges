@@ -23,13 +23,18 @@ Change the contents of this page depending on the current day and time.
 const display = document.querySelector('[data-js="display"]');
 
 function getGreeting(hour) {
+  const hour = newDate().getHours();
+
   if (hour >= 6 && hour <= 12) {
     return "Good Morning";
-  } else if (hour >= 13 && hour <= 18) {
+  }
+  if (hour >= 12.01 && hour <= 18) {
     return "Good Afternoon";
-  } else if (hour >= 19 && hour <= 22) {
+  }
+  if (hour >= 18.01 && hour <= 22) {
     return "Good Evening";
-  } else if (hour >= 23 && hour <= 5) {
+  }
+  if ((hour >= 22.01 && hour <= 24) || (hour <= 5 && hour >= 0)) {
     return "Good Night";
   } else {
     return undefined;
@@ -38,19 +43,19 @@ function getGreeting(hour) {
 
 console.log(getGreeting(22));
 
+let dayOfWeek = "Saturday";
+
 function getDayColor(dayOfWeek) {
-  if ((dayOfWeek = "Monday")) {
+  if (dayOfWeek === "Monday") {
     return "darkgray";
-  } else if ((dayOfWeek = "Tuesday" || "Wednesday" || "Thursday" || "Friday")) {
+  } else if (dayOfWeek === "Tuesday" || "Wednesday" || "Thursday" || "Friday") {
     return "lightblue";
-  } else if ((dayOfWeek = "Saturday" || "Sunday")) {
+  } else if (dayOfWeek === "Saturday" || "Sunday") {
     return "hotpink";
   } else {
     return undefined;
   }
 }
-
-console.log(dayOfWeek("Wendesday"));
 
 display.textContent = getGreeting();
 document.body.style.backgroundColor = getDayColor();
