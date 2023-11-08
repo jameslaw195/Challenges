@@ -23,7 +23,7 @@ Change the contents of this page depending on the current day and time.
 const display = document.querySelector('[data-js="display"]');
 
 function getGreeting(hour) {
-  const hour = newDate().getHours();
+  let hour = newDate().getHours();
 
   if (hour >= 6 && hour <= 12) {
     return "Good Morning";
@@ -36,24 +36,22 @@ function getGreeting(hour) {
   }
   if ((hour >= 22.01 && hour <= 24) || (hour <= 5 && hour >= 0)) {
     return "Good Night";
-  } else {
-    return undefined;
   }
 }
 
 console.log(getGreeting(22));
 
-let dayOfWeek = "Saturday";
-
 function getDayColor(dayOfWeek) {
-  if (dayOfWeek === "Monday") {
+  let dayOfWeek = newDate().getDay()
+
+  if (dayOfWeek = 1) {
     return "darkgray";
-  } else if (dayOfWeek === "Tuesday" || "Wednesday" || "Thursday" || "Friday") {
+  } 
+  if (dayOfWeek >1 && dayOfWeek <= 5) {
     return "lightblue";
-  } else if (dayOfWeek === "Saturday" || "Sunday") {
+  } 
+  if (dayOfWeek = 0 || dayOfWeek = 6) {
     return "hotpink";
-  } else {
-    return undefined;
   }
 }
 
