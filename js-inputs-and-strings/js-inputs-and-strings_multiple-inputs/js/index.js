@@ -14,3 +14,19 @@ Implement the following functionality:
 const firstInput = document.querySelector("[data-js=first-input]");
 const secondInput = document.querySelector("[data-js=second-input]");
 const button = document.querySelector("[data-js=button]");
+
+button.addEventListener("click", () => {
+  secondInput.value = firstInput.value;
+});
+
+button.addEventListener("click", () => {
+  secondInput.value = firstInput.value.toUpperCase();
+});
+
+button.addEventListener("click", () => {
+  let input1 = firstInput.value;
+  let input2 = secondInput.value;
+
+  firstInput.value = input2;
+  secondInput.value = input1;
+});
