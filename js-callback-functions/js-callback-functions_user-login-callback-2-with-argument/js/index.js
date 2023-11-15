@@ -10,4 +10,8 @@ function showWelcomeMessage(username) {
 
 handleUserLogin(showWelcomeMessage);
 
+handleUserLogin((username) => {
+  console.log("Welcome " + username + " you are logged in now.");
+});
+
 // The exercise starts here!
