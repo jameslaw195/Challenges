@@ -2,19 +2,18 @@
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 import "./App.css";
-import Header from "./components/Header/Header";
 import { EntryForm } from "./components/EntryForm/EntryForm";
 import { Entries } from "./components/Entries/Entries";
 import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
 
 function App() {
   return (
     <>
-      <h1>hello</h1>
-      {/* <Header />
+      <Header />
       <EntryForm />
       <Entries />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

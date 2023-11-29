@@ -1,3 +1,3 @@
-export default function Header() {
-  return <Header>Journal</Header>;
+export function Header() {
+  return <h1>Journal</h1>;
 }
