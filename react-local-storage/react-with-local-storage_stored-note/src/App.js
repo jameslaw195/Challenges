@@ -7,7 +7,7 @@ import useLocalStorageState from "use-local-storage-state";
 export default function App() {
   const [note, setNote] = useLocalStorageState("note", { defaultValue: "" });
   const [font, setFont] = useLocalStorageState("font", {
-    defaultValue: "Comic Sans",
+    defaultValue: "",
   });
 
   function handleNoteChange(newNote) {
